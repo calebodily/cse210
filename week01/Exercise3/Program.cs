@@ -6,7 +6,7 @@ class Program
     {
         int guess = 0;
         Random Generator = new Random();
-        int number = Generator.Next(1, 100);
+        int number = Generator.Next(1, 101);
 
         while (guess != number)
         {
