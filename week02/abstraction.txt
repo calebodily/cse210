@@ -1,0 +1,22 @@
+Explain the meaning of Abstraction
+
+Abstraction is the concept of turning complex ideas into simple ideas. The example in the learning activity was a simple print statement where whenever you use a print statement. You are actually calling thousands of lines of code to accomplish the task but it fits on one line as a print statement.
+
+Highlight a benefit of Abstraction
+
+A benefit of abstraction is that through using classes, methods, and member variables we are able to turn a complex idea into a couple of files for each class that work together to execute code.
+
+Provide an application of Abstraction
+
+One example of the applicability of abstraction is demonstrated with the model of the application we want to create. By listing boxes as classes and putting the necessary methods and variables inside of the box. We build the skeleton of the application which we can then use to help us actually code it later down the line.
+
+Code example of abstraction that I wrote
+
+An example of abstraction would be this block of code:
+
+else if (choice == 2)
+            {
+                journal.DisplayAll();
+            }
+
+In this code I use the class of journal with a method of DisplayAll(); to display text to the console for the user to see. It uses code from somewhere else that is more complicated and simplifies it to one line of journal.DisplayAll();
