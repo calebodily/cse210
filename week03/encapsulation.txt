@@ -1,0 +1,45 @@
+Explain the meaning of Encapsulation.
+Encapsulation is the process of compartamentalizing code so that it can not be changed outside of the class it is in. This is done by changing member variables and classes from public to private. Using Getter and Setter's we can retrieve those private variables and use them without altering or changing the original data.
+
+
+Highlight a benefit of Encapsulation.
+A benefit of encapsulation is that when your code does something unexpected or breaks it is easier to track down the problem and find what is causing the issue.
+
+
+Provide an application of Encapsulation.
+Use a code example of Encapsulation from the program you wrote. (You should copy and paste a few lines of code that demonstrate the use of the principle.)
+public class Reference
+{
+    private string _book;
+    private int _chapter;
+    private int _verse;
+    private int _endVerse;
+
+    public Reference(string book, int chapter, int verse)
+    {
+        _book = book;
+        _chapter = chapter;
+        _verse = verse;
+        _endVerse = 0;
+    }
+    public Reference(string book, int chapter, int startVerse, int endVerse)
+    {
+        _book = book;
+        _chapter = chapter;
+        _verse = startVerse;
+        _endVerse = endVerse;
+    }
+    public string GetDisplayText()
+    {
+        if (_endVerse == 0)
+        {
+            return $"{_book} {_chapter}:{_verse}";
+        }
+        else
+        {
+            return $"{_book} {_chapter}:{_verse}-{_endVerse}";
+        }
+    }
+}
+
+In this class the variables are private so that other classes cannot access them normally. There is no way for these variables to change except for locally in this class.
