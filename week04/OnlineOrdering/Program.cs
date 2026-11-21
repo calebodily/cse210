@@ -20,5 +20,25 @@ class Program
         order.AddProduct(product3);
 
         order.DisplayOrder(customer, address);
+
+
+        Console.WriteLine("");
+        Console.WriteLine("");
+        Console.WriteLine("");
+
+
+        Address address2 = new Address("Via Celimontana", "Roma", "Rome", "Italy");
+        Customer customer2 = new Customer("Abby Bodily");
+        Product product12 = new Product("Apples", "23DF355", 7, 1.25f);
+        Product product22 = new Product("Bannanas", "837DFH", 8, 1.50f);
+        Product product32 = new Product("Oranges", "9237DFG", 3, 1.25f);
+
+        Order order2 = new Order();
+
+        order2.AddProduct(product12);
+        order2.AddProduct(product22);
+        order2.AddProduct(product32);
+
+        order2.DisplayOrder(customer2, address2);
     }
 }
